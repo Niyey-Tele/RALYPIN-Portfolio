@@ -1537,6 +1537,44 @@
                 </div>
             </div>
         </div>
+    <!-- Project 4: WiFi Remote Control Tank -->
+            <div class="project-card reveal">
+    <div class="project-image">
+        <img src="images/Project02_RC_car.jpg" alt="WiFi Remote Control Tank ESP32-S3 Arduino">
+    </div>
+    <div class="project-content">
+        <span class="project-category">Hardware / IoT / Wireless</span>
+        <h3>WiFi Remote Control Tank</h3>
+        <div class="project-meta">
+            <i class="far fa-calendar-alt"></i> August 2026 | Self-Study Project
+        </div>
+        <p class="project-desc">
+            A WiFi-controlled tank robot built on an ESP32-S3 + Arduino dual-controller
+            architecture. The ESP32-S3 creates its own WiFi hotspot and hosts a mobile web
+            control interface, allowing a smartphone to drive the tank through a browser.
+            Commands are forwarded to the Arduino via UART serial communication, which
+            drives the L298N motor controller and onboard headlights.
+        </p>
+        <div class="project-features">
+            <strong>Key Features:</strong>
+            <ul>
+                <li>ESP32-S3 WiFi AP mode — phone connects directly, no router needed</li>
+                <li>Responsive web UI with press-and-hold controls: hold to move, release to auto-stop</li>
+                <li>6 commands: forward, backward, left turn, right turn, stop, headlight on/off</li>
+                <li>UART serial link (ESP32-S3 TX → Arduino RX) with shared-ground signal reference</li>
+                <li>L298N dual H-bridge motor driver on tank chassis</li>
+                <li>Optional connection-loss timeout safety stop</li>
+                <li>Highly scalable — can add auto obstacle avoidance, sun-tracking self-charging,
+                    PWM speed control, Bluetooth backup, or long-distance network control</li>
+            </ul>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/Niyey-Tele/Remote-Control-Driving-Tank" class="project-link" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+    </div>
+</div>
     </section>
 
     <!-- Contact Section -->
