@@ -1537,40 +1537,51 @@
                 </div>
             </div>
         </div>
-    <!-- Project 4: WiFi Remote Control Tank -->
-            <div class="project-card reveal">
+      <!-- Project 4: WiFi Remote Control Tank (ESP32-S3 + Arduino) -->
+<div class="project-card reveal">
     <div class="project-image">
         <img src="images/Project02_RC_car.jpg" alt="WiFi Remote Control Tank ESP32-S3 Arduino">
     </div>
     <div class="project-content">
-        <span class="project-category">Hardware / IoT / Wireless</span>
-        <h3>WiFi Remote Control Tank</h3>
+        <span class="project-category">Embedded / IoT / Wireless Communication</span>
+        <h3>WiFi Remote Control Smart Tank</h3>
         <div class="project-meta">
-            <i class="far fa-calendar-alt"></i> August 2026 | Self-Study Project
+            <i class="far fa-calendar-alt"></i> August 2026
         </div>
         <p class="project-desc">
-            A WiFi-controlled tank robot built on an ESP32-S3 + Arduino dual-controller
-            architecture. The ESP32-S3 creates its own WiFi hotspot and hosts a mobile web
-            control interface, allowing a smartphone to drive the tank through a browser.
-            Commands are forwarded to the Arduino via UART serial communication, which
-            drives the L298N motor controller and onboard headlights.
+            A dual-controller WiFi remote-controlled tank robot based on ESP32-S3 and Arduino.
+            Built with a complete upper/lower computer wireless architecture, the tank is fully
+            controllable via smartphone browser without router, implementing stable wireless
+            UART communication and human-friendly hold-to-drive control logic.
         </p>
         <div class="project-features">
             <strong>Key Features:</strong>
             <ul>
-                <li>ESP32-S3 WiFi AP mode — phone connects directly, no router needed</li>
-                <li>Responsive web UI with press-and-hold controls: hold to move, release to auto-stop</li>
-                <li>6 commands: forward, backward, left turn, right turn, stop, headlight on/off</li>
-                <li>UART serial link (ESP32-S3 TX → Arduino RX) with shared-ground signal reference</li>
-                <li>L298N dual H-bridge motor driver on tank chassis</li>
-                <li>Optional connection-loss timeout safety stop</li>
-                <li>Highly scalable — can add auto obstacle avoidance, sun-tracking self-charging,
-                    PWM speed control, Bluetooth backup, or long-distance network control</li>
+                <li>ESP32-S3 AP hotspot mode — direct phone connection, no external router required</li>
+                <li>Custom mobile web control UI with perfect hold-to-move, release-to-stop logic</li>
+                <li>Dual-controller architecture: ESP32-S3 wireless host + Arduino hardware executor</li>
+                <li>Stable UART one-way serial communication with strict 3.3V/5V level protection</li>
+                <li>6 full control commands: forward, backward, left, right, stop, headlight switch</li>
+                <li>Optimized power solution — fixed ESP32-S3 overheating issue from improper 12V power supply</li>
+                <li>Highly expandable for auto sun-tracking self-charging, obstacle avoidance and long-distance control</li>
             </ul>
         </div>
+        <div class="project-features">
+            <strong>What I Learned:</strong>
+            <ul>
+                <li>Complete WiFi WLAN principle including AP/STA mode and 2.4GHz wireless signal transmission</li>
+                <li>Cross-board UART serial communication, voltage level matching and common-ground signal rules</li>
+                <li>HTTP web server, B/S architecture and front-end touch event control logic</li>
+                <li>Standard communication engineering closed-loop signal flow: encoding → modulation → transmission → decoding → execution</li>
+                <li>Hardware debugging, power optimization and embedded system stability tuning</li>
+            </ul>
+        </div>
+        <div class="project-highlight">
+            <span><i class="fas fa-star"></i> Professional Dual-Chip Wireless IoT Architecture</span>
+        </div>
         <div class="project-links">
-            <a href="https://github.com/Niyey-Tele/Remote-Control-Driving-Tank" class="project-link" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i> View on GitHub
+            <a href="https://github.com/Niyey-Tele/Remote-Control-Driving-Tank" class="project-link" target="_blank">
+                <i class="fab fa-github"></i> View Full Report &amp; Source Code
             </a>
         </div>
     </div>
