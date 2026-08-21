@@ -1573,6 +1573,52 @@
         </div>
     </div>
 </div>
+
+             <!-- Project 5: ESP32-S3 Environment Monitor -->
+
+<div class="project-card reveal">
+    <div class="project-image">
+        <img src="images/Project05_Cover.png" alt="ESP32-S3 Environment Monitor DHT11 Soil Moisture WiFi Web Dashboard">
+        <img src="images/Project05_Environment_Web.png" alt="ESP32-S3 Environment Monitor DHT11 Soil Moisture WiFi Web Dashboard">
+    </div>
+    <div class="project-content">
+        <span class="project-category">Hardware / IoT / Sensors / Web</span>
+        <h3>ESP32-S3 Environment Monitor</h3>
+        <div class="project-meta">
+            <i class="far fa-calendar-alt"></i> August 2026 | Self-Study Project
+        </div>
+        <p class="project-desc">
+            A real-time environmental monitoring system built on ESP32-S3, measuring ambient
+            temperature, humidity, and soil moisture. The ESP32-S3 connects to WiFi and hosts a
+            responsive dark-themed web dashboard that auto-refreshes every 5 seconds. Sensor data is
+            exposed through a REST API returning JSON, and the web interface is stored on the onboard
+            LittleFS flash filesystem — demonstrating a complete embedded full-stack architecture where
+            C++ runs on the microcontroller and HTML/JavaScript runs in the browser.
+        </p>
+        <div class="project-features">
+            <strong>Key Features:</strong>
+            <ul>
+                <li>DHT11 digital sensor for temperature (°C) and relative humidity (%)</li>
+                <li>Capacitive soil moisture sensor via ADC1 analog input (GPIO 10), calibrated to 0–100%</li>
+                <li>ESP32-S3 WiFi station mode — connects to home WiFi, accessible from any device on the network</li>
+                <li>Built-in web server on port 80 with two routes: "/" serves dashboard, "/data" returns JSON</li>
+                <li>LittleFS flash filesystem stores index.html separately from firmware — UI updates without recompiling C++</li>
+                <li>REST API endpoint returns JSON: {"temperature": 28.5, "humidity": 65.0, "soil_moisture": 45.0}</li>
+                <li>JavaScript fetch() auto-refreshes sensor readings every 5 seconds without page reload</li>
+                <li>Responsive dark-mode card UI with cyan accent, optimized for both phone and desktop browsers</li>
+                <li>Manual "Refresh Now" button for on-demand readings alongside auto-refresh</li>
+                <li>NaN-safe sensor reading — returns 0.0 instead of corrupt values when sensor is disconnected</li>
+                <li>PlatformIO professional project structure: src/ (C++ firmware), data/ (web assets), platformio.ini (build config)</li>
+                <li>Highly scalable — can add data logging, MQTT integration, OTA updates, history charts, or Home Assistant integration</li>
+            </ul>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/Niyey-Tele/ESP32-Environment-Monitor" class="project-link" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+    </div>
+</div>   
                 <!--Eech projects must be upper this line to wreap in a same projectgrip-->
             </div>
         </div>
