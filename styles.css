@@ -15,3 +15,10 @@
 .social-hero i {
     margin-right: 8px;
 }
+.hero-tagline
+{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
