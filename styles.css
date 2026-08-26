@@ -1016,10 +1016,11 @@
 }
 .training-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 35px;
     max-width: 1000px;
     margin: 40px auto 0;
+
 }
 .training-card {
     position: relative;
