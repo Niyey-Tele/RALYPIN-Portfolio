@@ -1045,7 +1045,7 @@
 }
 .project-images img {
     flex: 1;
-    width: 50%;
+    /*  width: 50%;  DELETED BECAUSE I SOMETIME WILL USE MORE THAM ONE PICTURE*/
     height: 100%;
     object-fit: cover;
 }
@@ -1298,5 +1298,16 @@
                 right: 20px;
                 width: 42px;
                 height: 42px;
+            }
+            .hero-tagline
+            {
+                white-space: normal;
+                font-size: 10px;
+                padding: 6px 14px;
+            }
+            .hero p
+            {
+                overflow-wrap: break-word;
+                word-break: break-word;
             }
         }
