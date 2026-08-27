@@ -1022,26 +1022,26 @@
     margin: 40px auto 0;
 
 }
-.training-card {
-    position: relative;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-    border: 1px solid #e2e8f0;
+.training-card 
+{
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
     overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    padding: 28px;
+    position: relative;
 }
 .training-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 86, 179, 0.15);
+    transform: translateY(-8px);
+    box-shadow: var(--box-shadow-hover);
 }
 
 /* 卡片顶部图片区域 - 两张图并排 */
 .project-images {
     display: flex;
     gap: 6px;
-    margin: -24px -24px 18px -24px;
+    margin: -28px -28px 18px -28px;
     height: 140px;
 }
 .project-images img {
