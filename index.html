@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RA LYPIN — Communication Engineering student at Guilin University of Technology. Explore my embedded systems, IoT, and wireless communication projects.">
     <title>RA LYPIN | Communication Engineering Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="images/logo.png">
@@ -255,6 +256,13 @@
         <div class="project-meta">
             <i class="far fa-calendar-alt"></i> August 2026
         </div>
+        <div class="project-tech">
+            <span>Arduino</span>
+            <span>HC-SR04</span>
+            <span>SG-90</span>
+            <span>L298N</span>
+            <span>FSM</span>
+        </div>
         <p class="project-desc">
             A fully autonomous self-driving tank robot built on Arduino with ultrasonic sensing, servo scanning and intelligent path decision-making. It operates entirely independently without Bluetooth, WiFi or remote control, using a differential tank-wheel drive structure.
         </p>
@@ -303,6 +311,12 @@
                         <div class="project-meta">
                             <i class="far fa-calendar-alt"></i> December 2025
                         </div>
+                        <div class="project-tech">
+                            <span>C Language</span>
+                            <span>Binary Search</span>
+                            <span>Bubble Sort</span>
+                            <span>File I/O</span>
+                        </div>
                         <p class="project-desc">
                             A fully functional database management system built from scratch in C.
                             This project demonstrates my ability to implement core programming concepts
@@ -337,6 +351,11 @@
                         <h3>Analog Trigger with Latch Memory</h3>
                         <div class="project-meta">
                             <i class="far fa-calendar-alt"></i> February 2026 | Self-Study Project
+                        </div>
+                        <div class="project-tech">
+                            <span>Analog Circuit</span>
+                            <span>LDR Sensor</span>
+                            <span>SR Latch</span>
                         </div>
                         <p class="project-desc">
                             A fully functional analog temperature / light trigger system with latch memory.
@@ -377,6 +396,13 @@
         <h3>WiFi Remote Control Tank</h3>
         <div class="project-meta">
             <i class="far fa-calendar-alt"></i> August 2026 | Self-Study Project
+        </div>
+        <div class="project-tech">
+            <span>EPS-32-S3</span>
+            <span>Arduino</span>
+            <span>WiFIAP</span>
+            <span>Web Sever</span>
+            <span>UART</span>
         </div>
         <p class="project-desc">
             A WiFi-controlled tank robot built on an ESP32-S3 + Arduino dual-controller
@@ -421,6 +447,13 @@
         <h3>ESP32-S3 Environment Monitor</h3>
         <div class="project-meta">
             <i class="far fa-calendar-alt"></i> August 2026 | Self-Study Project
+        </div>
+        <div class="project-tech">
+            <span>EPS-32-S3</span>
+            <span>DHT11</span>
+            <span>LittleFS</span>
+            <span>REST API</span>
+            <span>HTML/CSS/JS</span>
         </div>
         <p class="project-desc">
             A real-time environmental monitoring system built on ESP32-S3, measuring ambient
@@ -513,7 +546,7 @@
             </p>
             <span class="training-placeholder">Coming Soon</span>
         </div>
-        
+
         <!-- upper this part to add more training cards -->
     </div>
 </div>
@@ -812,6 +845,13 @@
         // Start typewriter after page load
         window.addEventListener('load', () => {
             setTimeout(typeWriter, 800);
+        });
+        //in case user change from Mobile to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
+            }
         });
     </script>
 </body>

@@ -1305,6 +1305,16 @@
         }
 
         @media (max-width: 480px) {
+            .project-image img
+            {
+                max-width: 80%;
+            }
+            .project-image 
+            {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 10px;
+            }
             .hero h1 {
                 font-size: 1.9rem;
             }
@@ -1336,3 +1346,31 @@
                 word-break: break-word;
             }
         }
+
+/* ==== Project Tech Stack Tags ==== */
+.project-tech
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.project-tech span
+{
+    background: var(--card-bg);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.78rem;
+    border: 1px solid #e9ecef;
+    color: var(--primary-color);
+    transition: var(--transition);
+    cursor: default;
+}
+.project-tech span:hover
+{
+    background: var(--gradient);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
