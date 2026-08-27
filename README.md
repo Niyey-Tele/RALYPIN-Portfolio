@@ -29,10 +29,15 @@ https://niyey-tele.github.io/RALYPIN-Portfolio/
 ## 📁 Project Structure
 
 ├── index.html          # Main page
+
 ├── styles.css          # All styles (CSS variables + responsive)
+
 ├── images/             # Project photos, profile, certificates
+
 ├── ImagePract/         # Engineering training photos
+
 ├── PDF/                # Resume, reports
+
 └── README.md
 
 ## How to Run Locally
