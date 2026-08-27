@@ -29,15 +29,10 @@ https://niyey-tele.github.io/RALYPIN-Portfolio/
 ## 📁 Project Structure
 
 ├── index.html          # Main page
-|
 ├── styles.css          # All styles (CSS variables + responsive)
-|
 ├── images/             # Project photos, profile, certificates
-|
 ├── ImagePract/         # Engineering training photos
-|
 ├── PDF/                # Resume, reports
-|
 └── README.md
 
 ## How to Run Locally
@@ -46,7 +41,7 @@ https://niyey-tele.github.io/RALYPIN-Portfolio/
 2. Make sure all folders are kept together:
    - `index.html` and `styles.css` must be in the same folder
    - `images/`, `ImagePract/`, and `PDF/` folders must be present
-3. Use anytool as you alway use to run a live sever
+3. Use any tools as you always use to run a live sever
 
 > Note: If you only open index.html without styles.css, the page will show
 > as plain text with no styling. If image folders are missing, photos will
