@@ -1018,7 +1018,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 35px;
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     margin: 40px auto 0;
 
 }
@@ -1049,6 +1049,7 @@
     /*  width: 50%;  DELETED BECAUSE I SOMETIME WILL USE MORE THAM ONE PICTURE*/
     height: 100%;
     object-fit: cover;
+    min-width: 0;
 }
 
 /* 图标浮在图片左上角 */
