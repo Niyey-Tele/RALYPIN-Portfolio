@@ -1208,6 +1208,12 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+
+            /* Keep training cards aligned with the single-column project layout. */
+            .training-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1269,6 +1275,23 @@
 
             .experience-gallery {
                 grid-template-columns: 1fr;
+            }
+
+            .training-section {
+                padding: 60px 0;
+            }
+
+            .training-grid {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .training-card {
+                padding: 24px;
+            }
+
+            .project-images {
+                margin: -24px -24px 18px;
             }
 
             .contact-links {
