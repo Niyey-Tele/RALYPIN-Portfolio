@@ -54,4 +54,4 @@ Electrical and Electronic Engineering, specialize in Communication, student at G
 Passionate about embedded systems, IoT, wireless communication, and learning by building.
 
 
-                                    © 2026 RA LYPIN. All rights reserved.
+© 2026 RA LYPIN. All rights reserved.
