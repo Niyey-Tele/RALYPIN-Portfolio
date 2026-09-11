@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RA LYPIN — Communication Engineering student at Guilin University of Technology. Explore my embedded systems, IoT, and wireless communication projects.">
-    <title>RA LYPIN | Communication Engineering Portfolio</title>
+    <meta name="description" content="RA LYPIN — Telecommunication Engineering student at Guilin University of Technology. Explore my embedded systems, IoT, and wireless communication projects.">
+    <title>RA LYPIN | Telecommunication Engineering Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
@@ -83,13 +83,13 @@
                 <div class="background-text reveal">
                     <h3>Who I Am</h3>
                     <p>
-                        As a Communication Engineering student, I've proven my capabilities through consistent excellence — ranking in Cambodia's top 0.5% nationally and earning competitive scholarships.
+                        As a Telecommunication Engineering student, I've proven my capabilities through consistent excellence — ranking in Cambodia's top 0.5% nationally and earning competitive scholarships.
                         I'm genuinely fascinated by how wireless technologies connect our world, and I learn best by building — with 5 hands-on projects already completed, from a WiFi remote-control tank to an ESP32 ad-blocker and IoT environmental monitor.
                         I'm constantly teaching myself new skills in MATLAB, Python, circuit design, and embedded systems, turning classroom theory into hardware that actually works.
                     </p>
 
                     <div class="education-item">
-                        <h4>Bachelor of Electronic and Communication Engineering</h4>
+                        <h4>Bachelor of Electronic and Telecommunication Engineering</h4>
                         <p class="degree-cn">通信工程</p>
                         <p class="timeline-date"><i class="far fa-calendar-alt"></i> 2025 - Present (Expected: 2029)</p>
                         <p><strong>Guilin University of Technology</strong></p>
@@ -485,6 +485,56 @@
                 <i class="fab fa-github"></i> View on GitHub
             </a>
             <a href="https://www.facebook.com/share/v/1CrshjEpxm/" class="project-link" target="_blank" rel="noopener">
+                <i class="fab fa-facebook"></i> View Video Demonstration
+            </a> 
+        </div>
+    </div>
+</div>
+<!-- Project 6: ESP32-C3 Temperature & Humidity Monitor -->
+<div class="project-card reveal">
+    <div class="project-image">
+        <img src="ImageProject/EPS32_C3_Environment_Monitoring.jpg" alt="ESP32-C3 DHT11 OLED Humidity Monitor with LED indicators">
+    </div>
+    <div class="project-content">
+        <span class="project-category">Hardware / Embedded / Sensors / Web</span>
+        <h3>ESP32-C3 Temperature & Humidity Monitor</h3>
+        <div class="project-meta">
+            <i class="far fa-calendar-alt"></i> September 2026 | Self-Study Project
+        </div>
+        <div class="project-tech">
+            <span>ESP32-C3</span>
+            <span>DHT11</span>
+            <span>SSD1306 OLED</span>
+            <span>C++ Arduino</span>
+            <span>HTML/CSS</span>
+        </div>
+        <p class="project-desc">
+            A compact embedded environmental monitor based on ESP32-C3. It reads ambient temperature and humidity from DHT11,
+            shows readings and system status on a 128*64 I2C OLED. Three LEDs give visual humidity feedback: red (too wet, blinking),
+            yellow (okay), blue (good). The system fully works offline without WiFi, with "NO SIG" indicator on OLED when disconnected.
+            It can connect to phone 2.4GHz hotspot and serve a simple responsive web page for remote monitoring.
+        </p>
+        <div class="project-features">
+            <strong>Key Features:</strong>
+            <ul>
+                <li>DHT11 sensor to measure temperature (°C) and relative humidity (%)</li>
+                <li>SSD1306 128*64 OLED screen: shows temperature, humidity, status alerts and WiFi signal state</li>
+                <li>Status text alerts on OLED: TOO HOT / TOO COLD / TOO WET / NORMAL / SENSOR ERROR</li>
+                <li>3 LED indicators: Red (too wet, blinking), Yellow (normal humidity), Blue (good dry condition)</li>
+                <li>Offline capable: all sensor reading, OLED and LED functions work without WiFi connection</li>
+                <li>OLED "NO SIG" label to show WiFi disconnection status; "WIFI:OK" when connected</li>
+                <li>Connect to phone 2.4GHz hotspot, ESP32 runs simple web server and serves responsive HTML page</li>
+                <li>Non-blocking millis() timer: sensor, OLED and LED status update every 5 seconds</li>
+                <li>WiFi connect timeout: firmware will not freeze if hotspot cannot be found</li>
+                <li>NaN sensor protection: detect faulty DHT11 readings and show sensor error on screen</li>
+                <li>PlatformIO project structure, written in Arduino C++ for ESP32-C3</li>
+            </ul>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/Niyey-Tele/EPS32C3-Environment-Monitoring" class="project-link" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a href="https://www.facebook.com/share/v/1D9ab8rB3e/" class="project-link" target="_blank" rel="noopener">
                 <i class="fab fa-facebook"></i> View Video Demonstration
             </a> 
         </div>
